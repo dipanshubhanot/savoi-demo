@@ -13,11 +13,17 @@ class MyDocument extends Document {
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
           <meta name="theme-color" content="#000000" />
-          <link rel="shortcut icon" href={require("assets/img/favicon.png")} />
+          < link rel = "shortcut icon"
+          href = {
+            require("assets/img/favicon/favicon.ico")
+          }
+          />
           <link
             rel="apple-touch-icon"
             sizes="76x76"
-            href={require("assets/img/apple-icon.png")}
+            href = {
+              require("assets/img/favicon/apple-touch-icon.png")
+            }
           />
           {/* Fonts and icons */}
           <link

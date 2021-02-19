@@ -90,11 +90,11 @@ const defaultFont = {
   lineHeight: "1.5em"
 };
 
-const primaryColor = "#9c27b0";
+const primaryColor = "#e89b93";
 const warningColor = "#ff9800";
-const dangerColor = "#f44336";
+const dangerColor = "#152238";
 const successColor = "#4caf50";
-const infoColor = "#00acc1";
+const infoColor = "#006d5b";
 const roseColor = "#e91e63";
 const grayColor = "#999999";
 
@@ -204,11 +204,11 @@ const defaultBoxShadow = {
 };
 
 const title = {
-  color: "#3C4858",
+  color: dangerColor,
   margin: "1.75rem 0 0.875rem",
   textDecoration: "none",
   fontWeight: "700",
-  fontFamily: `"Roboto Slab", "Times New Roman", serif`
+  fontFamily: `"Roboto Slab", "Times New Roman", serif`,
 };
 
 const cardTitle = {

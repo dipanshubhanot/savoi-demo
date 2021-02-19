@@ -18,9 +18,9 @@ import Parallax from "components/Parallax/Parallax.js";
 import styles from "assets/jss/nextjs-material-kit/pages/landingPage.js";
 
 // Sections for this page
-import ProductSection from "pages-sections/LandingPage-Sections/ProductSection.js";
-import TeamSection from "pages-sections/LandingPage-Sections/TeamSection.js";
+import USP from "pages-sections/LandingPage-Sections/USP.js";
 import WorkSection from "pages-sections/LandingPage-Sections/WorkSection.js";
+import Gallery from "../pages-sections/LandingPage-Sections/Gallery";
 
 const dashboardRoutes = [];
 
@@ -34,7 +34,7 @@ export default function LandingPage(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="NextJS Material Kit"
+        brand = "Savoi Homes"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
@@ -43,27 +43,24 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
-      <Parallax filter responsive image={require("assets/img/landing-bg.jpg")}>
+      <Parallax filter responsive image={require("assets/img/image1.jpg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>Your Story Starts With Us.</h1>
+              <h1 className={classes.title}>Designing Your Home to Your Lifestyle</h1>
               <h4>
-                Every landing page needs a small description after the big bold
-                title, that{"'"}s why we added this text here. Add here all the
-                information that can make you or your product create the first
-                impression.
+              Home is a place where we create memories, moments of joy. We at Savoi Homes, believe in designing your home to your life style, your needs and your individualistic taste.
               </h4>
               <br />
               <Button
-                color="danger"
+                color="primary"
                 size="lg"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
+                href="/landing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fas fa-play" />
-                Watch video
+                {/* <i className="fas fa-play" /> */}
+                Call to Action (please suggest)
               </Button>
             </GridItem>
           </GridContainer>
@@ -71,8 +68,8 @@ export default function LandingPage(props) {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          <ProductSection />
-          <TeamSection />
+          <USP />
+          <Gallery />
           <WorkSection />
         </div>
       </div>

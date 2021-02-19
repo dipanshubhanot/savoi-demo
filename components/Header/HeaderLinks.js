@@ -27,56 +27,61 @@ export default function HeaderLinks(props) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
-        <CustomDropdown
-          noLiPadding
-          navDropdown
-          buttonText="Components"
-          buttonProps={{
-            className: classes.navLink,
-            color: "transparent"
-          }}
-          buttonIcon={Apps}
-          dropdownList={[
-            <Link href="/components">
-              <a className={classes.dropdownLink}>All components</a>
-            </Link>,
-            <a
-              href="https://creativetimofficial.github.io/nextjs-material-kit/#/documentation?ref=njsmk-navbar"
-              target="_blank"
-              className={classes.dropdownLink}
-            >
-              Documentation
-            </a>
-          ]}
-        />
-      </ListItem>
-      <ListItem className={classes.listItem}>
         <Button
-          href="https://www.creative-tim.com/product/nextjs-material-kit-pro?ref=njsmk-navbar"
+          href="/landing"
           color="transparent"
-          target="_blank"
           className={classes.navLink}
         >
-          <Icon className={classes.icons}>unarchive</Icon> Upgrade to PRO
+          Home
         </Button>
-      </ListItem>
+      </ListItem> 
+      
       <ListItem className={classes.listItem}>
         <Button
-          href="https://www.creative-tim.com/product/nextjs-material-kit?ref=njsmk-navbar"
+          href="/landing"
           color="transparent"
-          target="_blank"
           className={classes.navLink}
         >
-          <CloudDownload className={classes.icons} /> Download
+          Savoi Luxury
         </Button>
       </ListItem>
+
       <ListItem className={classes.listItem}>
+        <Button
+          href="/landing"
+          color="transparent"
+          className={classes.navLink}
+        >
+          House & Land Package
+        </Button>
+      </ListItem>
+
+      <ListItem className={classes.listItem}>
+        <Button
+          href="/landing"
+          color="transparent"
+          className={classes.navLink}
+        >
+          Savoi Education
+        </Button>
+      </ListItem>
+
+      <ListItem className={classes.listItem}>
+        <Button
+          href="/landing"
+          color="transparent"
+          className={classes.navLink}
+        >
+          Our Team
+        </Button>
+      </ListItem>
+       {/* <ListItem className={classes.listItem}> */}
         {/*<Tooltip title="Delete">
           <IconButton aria-label="Delete">
             <DeleteIcon />
           </IconButton>
         </Tooltip>*/}
-        <Tooltip
+        {/* <Tooltip
           id="instagram-twitter"
           title="Follow us on twitter"
           placement={"top"}
@@ -124,8 +129,8 @@ export default function HeaderLinks(props) {
           >
             <i className={classes.socialIcons + " fab fa-instagram"} />
           </Button>
-        </Tooltip>
-      </ListItem>
+        </Tooltip> */}
+      {/* </ListItem> */}
     </List>
   );
 }
